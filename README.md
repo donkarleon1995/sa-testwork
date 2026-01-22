@@ -1,5 +1,5 @@
 # sa-testwork
-# Задание 1 по системному анализу  
+# Задание 1 
 ## Тема: Анализ требований (Корзина интернет-магазина)
 
 ---
@@ -88,3 +88,44 @@
 5. Общее
    - Корзина привязана к пользователю или к сессии?
    - Нужно ли сохранять корзину между устройствами?
+
+---
+
+# Задание 2  
+## Тема: Проектирование API
+
+Согласно заданию и приложенному скрину макета моб.приложения:
+1. RestAPI-запрос может выглять так: GET /partners/stores?city_id=SPB&limit=5
+city_id — идентификатор города пользователя
+limit — максимальное количество магазинов в ответе
+
+2. RestAPI-ответ (формат JSON)
+{
+    {
+      "id": "store_1",
+      "name": "Пример 1",
+      "description": "Свежие овощи и фрукты",
+      "logo_url": "https://primer1.ru/partners/store_1/logo.png",
+      "is_open": true,
+      "external_url": "https://primer1.ru", 
+      "position": 1
+    },
+    {
+      "id": "store_2",
+      "name": "Пример 2",
+      "description": "Органические продукты и суперфуды",
+      "logo_url": "https://primer2.ru/partners/store_2/logo.png",
+      "is_open": false,
+      "external_url": "https://primer2.ru",
+      "position": 2
+    }
+  "filtr": {
+    "total": 5,
+    "city_id": SPB
+  }
+}
+
+---
+
+# Задание 3  
+## Тема: Проектирование API
